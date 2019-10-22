@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello - My CGI Program</title>
+    <style>
+        .table-container {
+          margin: auto;
+          width: 20%;
+          border: 3px solid #ADADAD;
+          padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="table-container">
+    <table border='1'>
+        <tbody>
+        <tr>
+            {% for row in res %}
+        <tr>
+            {% for cell in row %}
+            <td>{{ cell }}</td>
+            {%- endfor %}
+        </tr>
+        {%- endfor %}
+
+        </tbody>
+    </table>
+    <a type="button" class="button" href="../yliao.html">back</a>
+</div>
+</body>
+</html>

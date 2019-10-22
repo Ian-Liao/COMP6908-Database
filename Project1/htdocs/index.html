@@ -1,0 +1,64 @@
+<HTML>
+    <HEAD>
+        <TITLE>web page</TITLE>
+    </HEAD>
+    <BODY>
+        <form action="../cgi-bin/query1.py" method="POST">
+            <fieldset>
+                <legend>query a</legend>
+                <p>This query retrieves the information about suppliers who supply a given part.</p>
+                Please input part name:<br>
+                <input type="text" name="part_name" placeholder="Case"><br>
+                <p>Please check the field(s) you need:</p>
+                  <input type="checkbox" name="sid" value="c.sid"> Supplier ID
+                  <input type="checkbox" name="sname" value="s.sname"> Supplier Name
+                  <input type="checkbox" name="address" value="s.address"> Supplier Address
+                  <input type="checkbox" name="cost" value="c.cost"> Part Cost
+                <br>
+                <br><br>
+                <input type="submit" value="Submit"></fieldset>
+        </form>
+        <form action="../cgi-bin/query2.py" method="POST">
+            <fieldset>
+                <legend>query b</legend>
+                <p>This query retrieves the names of the suppliers who have ever supplied a part with the given cost or higher.</p>
+                Please input cost:<br>
+                <input type="text" name="cost" placeholder="100"><br>
+                <br><br>
+                <br>
+                <input type="submit" value="Submit"></fieldset>
+        </form>
+        <form action="../cgi-bin/query3.py" method="POST">
+            <fieldset>
+                <legend>query c</legend>
+                <p>This query retrieves the names and addresses of the suppliers who charge the most for the given pid.</p>
+                Please input part ID:<br>
+                <input type="text" name="pid" placeholder="P1"><br>
+                <br><br>
+                <br>
+                <input type="submit" value="Submit"></fieldset>
+        </form>
+        <form action="../cgi-bin/query4.py" method="POST">
+            <fieldset>
+                <legend>query d</legend>
+                <p>This query retrieves the names of the parts with the given color which were supplied by all the suppliers in the given address.</p>
+                Please input color:<br>
+                <input type="text" name="color" placeholder="Red"><br>
+                Please input address:<br>
+                <input type="text" name="address" placeholder="1 Elizabeth Ave"><br>
+                <br>
+                <br>
+                <input type="submit" value="Submit"></fieldset>
+        </form>
+        <form action="../cgi-bin/query5.py" method="POST">
+            <fieldset>
+                <legend>query e</legend>
+                <p>This query retrieves the sids and names of the suppliers in the given address who do not supply any part.</p>
+                Please input address:<br>
+                <input type="text" name="address" placeholder="10 Governor Road"><br>
+                <br>
+                <br>
+                <input type="submit" value="Submit"></fieldset>
+        </form>
+    </BODY>
+</HTML>
