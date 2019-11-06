@@ -1,0 +1,1 @@
+[["pid", "pname", "color"], ["p26", "matherboard", "black"], ["p10", "vacuum", "pink"], ["p11", "memory", "red"], ["p18", "usb", "green"]]

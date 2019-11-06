@@ -31,3 +31,4 @@ if __name__ == "__main__":
     select("../data/Temporary/rel00.txt", "cost", ">=", 40)
     select("../data/Temporary/rel00.txt", "cost", "=", 30.82)
     project("../data/Temporary/rel00.txt", ["sid", "cost"])
+    join("../data/Temporary/rel00.txt", "pid", "../data/Temporary/rel01.txt", "pid")

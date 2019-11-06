@@ -36,4 +36,12 @@ def project(rel, attList):
 
 
 def join(rel1, att1, rel2, att2):
-    pass
+    with open(rel1) as f1, open(rel2) as f2:
+        content1 = f1.readlines()[0]
+        content2 = f2.readlines()[0]
+        data1 = json.loads(content1)
+        data2 = json.loads(content2)
+        df1 = pd.DataFrame(data1[1:], columns=data1[0])
+        df2 = pd.DataFrame(data2[1:], columns=data2[0])
+        res = pd.merge(df1, df2, left_on=att1, right_on=att2, how='inner')
+        print(res)
