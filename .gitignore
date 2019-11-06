@@ -103,5 +103,11 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+# IDE related 
+Project2/.idea
+Project2/your-user-name/.idea
+
 # project data
-Project2/your-user-name/data
+Project2/your-user-name/data/Products
+Project2/your-user-name/data/Suppliers
+Project2/your-user-name/data/Supply
