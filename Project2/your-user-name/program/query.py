@@ -1,4 +1,4 @@
-from program.relAlg import select, project, join
+from relAlg import select, project, join
 
 
 def query_a():
@@ -25,3 +25,9 @@ def query_d():
 
 def query_e():
     pass
+
+
+if __name__ == "__main__":
+    select("../data/Temporary/rel00.txt", "cost", ">=", 40)
+    select("../data/Temporary/rel00.txt", "cost", "=", 30.82)
+    project("../data/Temporary/rel00.txt", ["sid", "cost"])
