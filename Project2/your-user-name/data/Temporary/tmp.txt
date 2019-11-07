@@ -1,1 +1,1 @@
-[["sname"], ["Lee"]]
+[["sname", "pname", "cost"], ["Carter", "screwdriver", 47.27], ["kielly", "kettle", 48.01], ["Zhang", "flashlight", 49.45]]

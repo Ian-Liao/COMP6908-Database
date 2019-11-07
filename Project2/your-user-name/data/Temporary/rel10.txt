@@ -1,1 +1,0 @@
-[["sid", "sname", "address"], ["s03", "Carew", "20 Scott Street"], ["s06", "Evans", "3 Cabot Street"], ["s23", "Lee", "5 Water Street"], ["s16", "Newwll", "70 Eric Street"]]
